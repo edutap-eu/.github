@@ -2,13 +2,13 @@
 
 [DRAFT]
 
-The European digital campus card on the smartphone.
-
 ## Goals
 
 Our goals:
 
-- for europe and the world
+The European digital campus card on the smartphone:
+
+- for Europe and the world
 - decentralized
 - secure and state of the art
 - updates easily possible
@@ -26,28 +26,31 @@ We do *not* want:
 
 ## Initiatives
 
+The project is managed agilely and the initiatives from which we create epics are:
+
 1. Core (Generic)
    
-   Connect to pass providers like Goole. Apple or Host Card Emulations (HCI) like Legic, NXP or HID with a unified Wallet Communication API (WCAPI)
+   - Connect to pass providers like Google, Apple or Host Card Emulations (HCI) like Legic, NXP or HID with a unified Wallet Communication API (WCAPI).
 
-   Provide Callback Applications and event delegation. 
+   - Povide Callback Applications and event delegation. 
 
-   Provide a Pass Issuing Management Portal.
-
-
-2. Central Service Directory
-
-   Provide a management system to announce services (like a library, canteen, lab access) on Higher Education Institutes (HIS) to a central directory.
-   
-   Provide a search portal to find services and information how to get the digital passes to access these services..
-
-   Provide a ReST API to include the directory entries in the HEI portal.
-
-   Provide micro search portals for HEIs without resources to integrate in their own portal. Offer simple customization features (style/ logo overrides)
+   - Provide a Pass Issuing Management Portal.
 
 3. Mandant Specific Applications (MasA)
 
    Every HEI has different ways to store data, offer services, use hardware etc. We plan to provide examples for more generic services and generic programming libraries to not reinvent the wheel for every HEI.
+
+
+2. Central Service Directory
+
+   - Provide a management system to announce services (like a library, canteen, lab access) on Higher Education Institutes (HIS) to a central directory.
+   
+   - Provide a search portal to find services and information how to get the digital passes to access these services..
+
+   - Provide a ReST API to include the directory entries in the HEI portal.
+
+   - Provide micro search portals for HEIs without resources to integrate in their own portal. Offer simple customization features (style/ logo overrides)
+
 
 4. Infrastructure and Deployment
 
