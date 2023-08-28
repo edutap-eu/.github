@@ -15,6 +15,13 @@ In educational context a person can tap their smartphone (with specifc passes in
 
 eduTAP tries to fulfill the vision of the [European Student Card](https://erasmus-plus.ec.europa.eu/european-student-card-initiative/card), by establishing a state-of-the-art "common identity document" (ISO/IEC 18013-5 based) for members of education institutions and providing a common way to access on-site services, while respecting holders privacy and other european legal requirements.
 
+eduTAP also tries by its name and design to line up with other services provides by [Géant](https://geant.org/) within the [Géant Trust and Identity Services](https://geant.org/services/trust-and-identity-services/):
+
+- [eduGAIN](https://edugain.org/)
+- [eduroam](https://eduroam.org/)
+- [eduTEAMS](https://eduteams.org/)
+- *[InAcademia](https://inacademia.org/)*
+
 ## Goals :dart:
 
 Our goals:
@@ -46,6 +53,7 @@ The project is managed agilely and the initiatives from which we create epics ar
 
 1. eduTAP documentation
 
+   Documentation about eduTAP, the components and technologies.
    
 
 1. eduTAP-Core (Generic) :avocado:
@@ -77,11 +85,11 @@ The project is managed agilely and the initiatives from which we create epics ar
 
 1. Infrastructure and Deployment :bento:
 
-   Since the core applications are planned to run in every HEIs infrastructure we plan to provide detailled instructions how to use eduTAP from a system administration point of view.
+   Since elements of the core applications are planned to run in every HEIs infrastructure we plan to provide detailled instructions how to use eduTAP from a system administration point of view.
 
    We plan to offer ready to use containers for the reusable parts of the system, ready to run on Docker, Kubernetes (and othe OCI compatible platforms).
 
-1. Mandant Specific Applications (MasA) :arrow-right: eduTAP@institution :hamburger:
+1. Mandant Specific Applications (MasA) :arrow_right: eduTAP@institution :hamburger:
 
    Every Heigher Education Instituition (HEI) has different ways to store data, offer services, use hardware etc.
    We plan to provide examples for more generic services and generic programming libraries to not reinvent the wheel for every HEI.
