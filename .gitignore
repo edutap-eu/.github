@@ -1,0 +1,10 @@
+# GIT ignore file:
+
+!*.md
+
+* 
+*.*
+
+# Apple specific files:
+
+.DS_Store
