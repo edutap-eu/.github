@@ -51,7 +51,7 @@ The big picture of the project.
 The project is managed agilely and the initiatives from which we create epics are:
 
 
-1. eduTAP documentation
+1. eduTAP documentation :books:
 
    Documentation about eduTAP, the components and technologies.
    
