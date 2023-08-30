@@ -53,11 +53,10 @@ The project is managed agilely and the initiatives from which we create epics ar
 
    The necessary software to easily create a "common identity pass" or specific service passes for an issuing institution (normally a Higher Education Institution (HEI)) and issue those passes to potential credential holders.
 
-   - Connect to wallet / pass providers like Google, Apple, or Host Card Emulations (HCE) like Legic, NXP or HID with a unified Wallet Communication API (Wallet-API),
-   - provide Callback Applications and event delegation,
-   - provide a generic "Pass Issuing Management Portal",
-   - provide a generic "Pass Issuing Frontend",
-   - provide a generic "Pass Designer".
+   - Connect to wallet / pass providers like Google, Apple, or Host Card Emulations (HCE) like Legic, NXP, or HID with a unified Wallet Communication API (Wallet-API),
+   - provide Callback Applications (event delegation),
+   - provide a generic "Pass Issuing Management Portal", including a generic "Pass Designer",
+   - provide a generic "Pass Issuing Frontend" (web and kiosk modes).
 
 1. Central Service Directory :plate_with_cutlery:
 
