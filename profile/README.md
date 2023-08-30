@@ -49,11 +49,6 @@ The big picture of the project.
 The project is managed agilely and the initiatives from which we create epics are:
 
 
-1. eduTAP documentation :books:
-
-   Documentation about eduTAP, the components, and technologies.
-
-
 1. eduTAP-Core (Generic) :avocado:
 
    The necessary software to easily create a "common identity pass" or specific service passes for an issuing institution (normally a Higher Education Institution (HEI)) and issue those passes to potential credential holders.
@@ -71,12 +66,6 @@ The project is managed agilely and the initiatives from which we create epics ar
    - Provide a REST API to include the directory entries in the HEI portal.
    - Provide micro search portals for HEIs without resources to integrate with their portal. Offer simple customization features (style/ logo overrides)
 
-1. Infrastructure and Deployment :bento:
-
-   Since elements of the core applications are planned to run in every HEI's infrastructure we plan to provide detailed instructions on how to use eduTAP from a system administration point of view.
-
-   We plan to offer ready-to-use containers for the reusable parts of the system, ready to run on Docker, Kubernetes (and other OCI-compatible platforms).
-
 1. Mandant Specific Applications (MasA) :arrow_right: eduTAP@institution :hamburger:
 
    Every Higher Education Institution (HEI) has different ways to store data, offer services, use hardware, etc.
@@ -89,6 +78,16 @@ The project is managed agilely and the initiatives from which we create epics ar
    - app to check student status,
    - check-in to a course,
    - check-in to an exam.
+
+1. Infrastructure and Deployment :bento:
+
+   Since elements of the core applications are planned to run in every HEI's infrastructure we plan to provide detailed instructions on how to use eduTAP from a system administration point of view.
+
+   We plan to offer ready-to-use containers for the reusable parts of the system, ready to run on Docker, Kubernetes (and other OCI-compatible platforms).
+
+1. eduTAP documentation :books:
+
+   Documentation about eduTAP, the components, and technologies.
 
 
 ## State :footprints:
