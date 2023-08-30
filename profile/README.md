@@ -64,16 +64,6 @@ The project is managed agilely and the initiatives from which we create epics ar
    - provide a generic "Pass Issuing Frontend",
    - provide a generic "Pass Designer".
 
-1. eduTAP-Libs (Generic) :factory:
-
-   Generic libraries and sample apps, which can be used to implement a specific application to read a pass from the smartphone
-
-   - configurable VAS / Smarttap library to read Apple VAS passes, or Google Smarttap passes,
-configurable ISO/IEC 18013-5 library to read an eduTAP Common ID pass,
-   - app to check student status,
-   - check-in to a course,
-   - check-in to an exam.
-
 1. Central Service Directory :plate_with_cutlery:
 
    - Provide a management system to announce services (like a library, canteen, and lab access) on Higher Education Institutes (HEIs) to a central directory.
@@ -91,6 +81,14 @@ configurable ISO/IEC 18013-5 library to read an eduTAP Common ID pass,
 
    Every Higher Education Institution (HEI) has different ways to store data, offer services, use hardware, etc.
    We plan to provide examples for more generic services and generic programming libraries to not reinvent the wheel for every HEI.
+
+   Generic support libraries for the MaSA, and sample apps, which can be used to implement a specific application to read a pass from the smartphone
+
+   - configurable VAS / Smarttap library to read Apple VAS passes, or Google Smarttap passes,
+   - configurable ISO/IEC 18013-5 library to read an eduTAP Common ID pass,
+   - app to check student status,
+   - check-in to a course,
+   - check-in to an exam.
 
 
 ## State :footprints:
