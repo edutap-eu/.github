@@ -50,7 +50,7 @@ The big picture of the project.
 The project is managed agilely and the initiatives from which we create epics are:
 
 
-1. eduTAP-Core (Generic) :avocado:
+1. eduTAP-Core (Generic) :atom:
 
    The necessary software to easily create a "common identity pass" or specific service passes for an issuing institution (normally a Higher Education Institution (HEI)) and issue those passes to potential credential holders.
 
