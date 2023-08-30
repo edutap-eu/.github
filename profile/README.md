@@ -96,6 +96,6 @@ Project planning and prototype.
 
 ## Read More :open_book:
 
-Read the documentation of the project's predecessor [ECC-Pilot](https://ecc-pilot.github.io/documentation/)](https://ecc-pilot.github.io/documentation/)
+Read the documentation of the project's predecessor [ECC-Pilot](https://ecc-pilot.github.io/documentation/)
 
 In the future read our [documentation](https://docs.edutap.eu/)
