@@ -1,10 +1,11 @@
 # eduTAP
 
-[:construction: DRAFT :construction:]
+eduTAP as "educational tapping", derived from the marketing term "tap to pay", "tap to open", "tap to ride" by Apple and Google, describing the act of "tap" a smartphone on a reader device to perform a transaction.
 
-eduTAP as "educational tapping", derived from the marketing term "tap to pay" / "tap to open" / "tap to ride" by Apple and Google, describing the act of "tap" a smartphone on a reader device to perform a transaction. In an educational context, a person can tap their smartphone (with specific passes in the wallet) to:
+In an educational context, a person can tap their smartphone (with specific passes in the wallet) to:
 
 - identify themself,
+- claim a discount,
 - pay,
 - open a door,
 - lent a book,
