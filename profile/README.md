@@ -85,7 +85,7 @@ The project is managed agilely and the initiatives from which we create epics ar
 
    We plan to offer ready-to-use containers for the reusable parts of the system, ready to run on Docker, Kubernetes (and other OCI-compatible platforms).
 
-1. eduTAP documentation :books:
+1. [eduTAP documentation](https://docs.edutap.eu/) :books:
 
    Documentation about eduTAP, the components, and technologies.
 
@@ -98,4 +98,4 @@ Project planning and prototype.
 
 Read the documentation of the project's predecessor [ECC-Pilot](https://ecc-pilot.github.io/documentation/)](https://ecc-pilot.github.io/documentation/)
 
-In the future read our documentation (t.b.d.)
+In the future read our [documentation](https://docs.edutap.eu/)
