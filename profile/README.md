@@ -1,6 +1,6 @@
 # eduTAP
 
-eduTAP as "educational tapping", derived from the marketing term "tap to pay", "tap to open", "tap to ride" by Apple and Google, describing the act of "tap" a smartphone on a reader device to perform a transaction.
+eduTAP as "educational tapping", derived from the marketing term "tap to pay", "tap to open", and "tap to ride" by Apple and Google, describing the act of "tap" a smartphone on a reader device to perform a transaction.
 
 In an educational context, a person can tap their smartphone (with specific passes in the wallet) to:
 
@@ -12,7 +12,7 @@ In an educational context, a person can tap their smartphone (with specific pass
 - take a campus shuttle,
 - ...
 
-eduTAP tries to fulfill the vision of the [European Student Card](https://erasmus-plus.ec.europa.eu/european-student-card-initiative/card), by establishing a state-of-the-art "common identity document" (ISO/IEC 18013-5 based) for members of education institutions and providing a common way to access on-site services, while respecting holder's privacy and other European legal requirements.
+eduTAP tries to fulfill the interoperability vision of the [European Student Card](https://erasmus-plus.ec.europa.eu/european-student-card-initiative/card), by establishing a state-of-the-art "common identity document - eduID" (["ISO/IEC 18013-5:2021 Personal identification — ISO-compliant driving licence — Part 5: Mobile driving licence (mDL) application"](https://www.iso.org/standard/69084.html) based) and dedicated services passes for members of education institutions and providing a common way to access on-site services, while respecting holder's privacy and other European legal requirements.
 
 eduTAP also tries by its name and design to line up with other services provided by [Géant](https://geant.org/) within the [Géant Trust and Identity Services](https://geant.org/services/trust-and-identity-services/):
 
@@ -20,6 +20,8 @@ eduTAP also tries by its name and design to line up with other services provided
 - [eduroam](https://eduroam.org/)
 - [eduTEAMS](https://eduteams.org/)
 - *[InAcademia](https://inacademia.org/)*
+
+Disclaimer: eduTAP is currently a project by the "European University Alliance" [EUGLOH (European University Alliance for Global Health)](https://eugloh.eu/) and not an official Géant Service or Product. It is in concept and pilot phase, proving to the responsible DG EAC that an inter-university campus can provide interoperable services for own and incoming HEI memebers.
 
 ## Goals :dart:
 
