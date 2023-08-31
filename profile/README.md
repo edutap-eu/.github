@@ -21,7 +21,7 @@ eduTAP also tries by its name and design to line up with other services provided
 - [eduTEAMS](https://eduteams.org/)
 - *[InAcademia](https://inacademia.org/)*
 
-Disclaimer: eduTAP is currently a project by the "European University Alliance" [EUGLOH (European University Alliance for Global Health)](https://eugloh.eu/) and not an official Géant Service or Product. It is in concept and pilot phase, proving to the responsible DG EAC that an inter-university campus can provide interoperable services for own and incoming HEI memebers.
+Disclaimer: eduTAP is currently a project by the "European University Alliance" [EUGLOH (European University Alliance for Global Health)](https://eugloh.eu/) and not an official Géant Service or Product. It is in the concept and pilot phase (multiple prototypes), proving to the responsible DG EAC that an inter-university campus can provide interoperable services for its own and incoming HEI members.
 
 ## Goals :dart:
 
@@ -45,6 +45,16 @@ We do *not* want: :stop_sign:
 - new protocols or specifications,
 - providing commercial software,
 - competition with other projects or providers.
+
+It facilitates the "Law of Gall":
+
+> A complex system that works is invariably found to have evolved from a simple system that worked.
+> A complex system designed from scratch never works and cannot be patched up to make it work.
+> You have to start over with a working simple system.
+>
+> <cite>John Gall - Systemantics: How Systems Really Work and How They Fail</cite>
+
+and builds on top of fantastic existing concepts, technologies, and software. We do not try to create a complex system from scratch, but just connecting existing technology, like building a bridge.
 
 ## Initiatives :framed_picture:
 
