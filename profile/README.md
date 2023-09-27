@@ -12,9 +12,9 @@ In an educational context, a person can tap their smartphone (with specific pass
 - take a campus shuttle,
 - ...
 
-eduTAP tries to fulfill the interoperability vision of the [European Student Card](https://erasmus-plus.ec.europa.eu/european-student-card-initiative/card), by establishing a state-of-the-art "common identity document - eduID" (["ISO/IEC 18013-5:2021 Personal identification — ISO-compliant driving licence — Part 5: Mobile driving licence (mDL) application"](https://www.iso.org/standard/69084.html) based) and dedicated services passes for members of education institutions and providing a common way to access on-site services, while respecting holder's privacy and other European legal requirements.
+eduTAP plans to fulfill the interoperability vision of the [European Student Card](https://erasmus-plus.ec.europa.eu/european-student-card-initiative/card), by establishing a state-of-the-art "common identity document - eduID" (["ISO/IEC 18013-5:2021 Personal identification — ISO-compliant driving licence — Part 5: Mobile driving licence (mDL) application"](https://www.iso.org/standard/69084.html) based) and dedicated services passes for members of education institutions and providing a common way to access on-site services, while respecting holder's privacy and other European legal requirements.
 
-eduTAP also tries by its name and design to line up with other services provided by [Géant](https://geant.org/) within the [Géant Trust and Identity Services](https://geant.org/services/trust-and-identity-services/):
+eduTAP also plans by its name and design to line up with other services provided by [Géant](https://geant.org/) within the [Géant Trust and Identity Services](https://geant.org/services/trust-and-identity-services/):
 
 - [eduGAIN](https://edugain.org/)
 - [eduroam](https://eduroam.org/)
