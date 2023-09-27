@@ -104,7 +104,9 @@ The project is managed agilely and the initiatives from which we create epics ar
 
 ## State :footprints:
 
-Project planning and prototype.
+- project planning
+- implement wallet APIs
+- further planning 
 
 ## Read More :open_book:
 
