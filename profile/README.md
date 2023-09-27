@@ -8,7 +8,7 @@ In an educational context, a person can tap their smartphone (with specific pass
 - claim a discount,
 - pay,
 - open a door,
-- lent a book,
+- lend a book,
 - take a campus shuttle,
 - ...
 
