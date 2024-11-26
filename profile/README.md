@@ -110,6 +110,4 @@ The project is managed agilely and the initiatives from which we create epics ar
 
 ## Read More :open_book:
 
-Read the documentation of the project's predecessor [ECC-Pilot](https://ecc-pilot.github.io/documentation/)
-
-In the future read our [documentation](https://docs.edutap.eu/)
+Read our [documentation](https://docs.edutap.eu/) or go to our [eduTAP website](https://edutap.eu)
