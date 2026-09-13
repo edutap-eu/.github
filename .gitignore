@@ -1,10 +1,19 @@
 # GIT ignore file:
 
-!*.md
-
-* 
+*
 *.*
 
 # Apple specific files:
 
 .DS_Store
+
+# Explicit allow Markdown Files
+#
+# THIS LINE HAS TO STAY BELOW THE EXCLUSIONS. In a .gitignore the LAST matching
+# rule wins, so an exception written above `*` and `*.*` is silently undone by
+# them -- which is what happened here until 2026-09-13: `git add SECURITY.md`
+# reported "The following paths are ignored by one of your .gitignore files"
+# and `git commit` then found nothing to commit. The sibling repository
+# edutap-collective/.github already had the same three rules in the working
+# order; this file now matches it.
+!*.md
