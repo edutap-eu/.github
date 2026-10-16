@@ -17,3 +17,7 @@
 # edutap-collective/.github already had the same three rules in the working
 # order; this file now matches it.
 !*.md
+
+# Shared Renovate preset, see renovate-config.json5 and README.md. Below the
+# exclusions for the same reason as the Markdown rule above.
+!renovate-config.json5

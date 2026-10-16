@@ -1,0 +1,115 @@
+// Shared Renovate preset for the repositories of the edutap-eu organisation.
+//
+// A repository uses it with
+//
+//   { extends: ["github>edutap-eu/.github:renovate-config.json5"] }
+//
+// The file name has to be spelled out including `.json5`: without it Renovate
+// looks for a `.json` file, and JSON cannot carry these comments.
+//
+// Renovate runs as the hosted Mend Renovate GitHub App. It reads this preset
+// from the default branch of edutap-eu/.github, so a change here reaches every
+// repository that extends it on the app's next run.
+//
+// What belongs here: rules every repository wants. What does not: anything
+// that names a single repository's packages -- that goes into the
+// repository's own renovate.json5, below the `extends` line.
+//
+// The house rules of LMU-Dez-VI (gitlab.lrz.de, LMU-Dez-VI/renovate-config)
+// were the model; where this preset differs, the reason is GitHub and the
+// hosted app, not a different opinion.
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "eduTAP house rules: digest pins, grouped tooling, weekly lock file maintenance, security labels",
+
+  extends: [
+    "config:recommended",
+    // Keep the dashboard issue up to date even when no PR is open, so pending
+    // updates stay visible instead of piling up unnoticed.
+    ":dependencyDashboard",
+    // The eduTAP repositories use Conventional Commits; Renovate should too.
+    ":semanticCommits",
+    ":enablePreCommit",
+    // Security fixes bypass the schedule and are raised immediately.
+    ":enableVulnerabilityAlertsWithLabel(security)",
+    // GitHub Actions by tag AND commit SHA: a tag can be moved to other code
+    // without a diff in this repository. Renovate keeps the SHA current and
+    // the tag as a comment, so pinning costs nothing.
+    "helpers:pinGitHubActionDigests",
+  ],
+
+  timezone: "Europe/Berlin",
+  labels: ["dependencies"],
+
+  // The whole Monday, not a few hours of it. The hosted app decides on its
+  // own when it runs a repository. With a window of "before 06:00",
+  // edutap-website got no scheduled PR after 2026-09-14 (observed
+  // 2026-10-14: the dashboard was last refreshed on Monday 2026-10-12 at
+  // 16:51 UTC, and every scheduled update -- including the lock file
+  // maintenance due on 2026-10-01 -- was still "Awaiting Schedule").
+  schedule: ["on monday"],
+
+  prConcurrentLimit: 5,
+  prHourlyLimit: 0,
+
+  // Give a freshly published release a few days to be pulled if it is broken.
+  minimumReleaseAge: "3 days",
+
+  // In addition to GitHub's own advisory feed, look up osv.dev. It also
+  // covers ecosystems and advisories that do not reach the GitHub feed.
+  osvVulnerabilityAlerts: true,
+
+  // Refresh the lock files weekly even without a version bump, so transitive
+  // dependencies do not silently age. Most of the open Dependabot alerts on
+  // edutap-website (2026-10-14: 49, nearly all transitive) are exactly that.
+  lockFileMaintenance: {
+    enabled: true,
+    schedule: ["on monday"],
+  },
+
+  packageRules: [
+    {
+      groupName: "GitHub Actions",
+      matchManagers: ["github-actions"],
+    },
+    {
+      matchManagers: ["pre-commit"],
+      groupName: "pre-commit hooks",
+    },
+    {
+      // Base images and service images by tag AND digest: a moving tag
+      // changes what is deployed without a diff.
+      matchDatasources: ["docker"],
+      pinDigests: true,
+    },
+    {
+      // Tooling that cannot affect what is shipped: one PR instead of one
+      // per package.
+      groupName: "dev tooling (npm, non-major)",
+      matchManagers: ["npm"],
+      matchDepTypes: ["devDependencies"],
+      matchUpdateTypes: ["minor", "patch"],
+    },
+    {
+      // Everything in [dependency-groups] (PEP 735) is local tooling, never
+      // installed where the package runs.
+      groupName: "dev tooling (Python)",
+      matchManagers: ["pep621"],
+      matchDepTypes: ["dependency-groups"],
+    },
+    {
+      // Linter and type checker change what counts as an error. Kept out of
+      // the group, so that a red pipeline points at exactly one cause.
+      matchPackageNames: ["ruff", "ty"],
+      groupName: null,
+      commitMessageTopic: "{{depName}} (new rules or diagnostics possible)",
+    },
+    {
+      // Only follow the Node.js LTS line (even majors) in `.nvmrc` -- see
+      // https://endoflife.date/nodejs.
+      matchManagers: ["nvm"],
+      matchPackageNames: ["node"],
+      allowedVersions: "/^(\\d*[02468])$/",
+    },
+  ],
+}
